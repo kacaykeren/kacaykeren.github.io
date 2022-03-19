@@ -24,3 +24,21 @@ menuIcon.addEventListener("click", () => {
 closeIcon.addEventListener("click", () => {
     mobileMenuContainer.classList.remove("active");
 })
+
+// calculator
+const goButton = document.getElementById('goButton')
+
+    goButton.addEventListener('click', () => {
+        hitung()
+        function hitung() {
+            var panjang = document.getElementById("panjang").value;
+            var lebar = document.getElementById("lebar").value;
+            var luas = panjang*lebar;
+            var keliling = 2*panjang+2*lebar;
+            document.getElementById("hasilLuas").innerHTML = luas;
+            document.getElementById("hasilKeliling").innerHTML = keliling;
+        }
+
+
+
+    })

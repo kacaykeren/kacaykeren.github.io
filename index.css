@@ -56,11 +56,11 @@ nav.scrolled {
     padding: 12px;
 }
 
-nav .logo {
+nav .logo a{
     font-family: "Raleway", sans-serif;
     font-weight: 900;
     font-size: 40px;
-    
+    text-decoration: none;
     color: #FFFFFF;
 }
 
@@ -85,7 +85,8 @@ nav ul li a {
     width: 100%;
     padding: 150px 0;
     margin-top: 0;
-    background-position-y: -30px;
+    background-position-y: -20px;
+    background-position-x: center;
 }
 
 .hero-section .hero-container h1 {
@@ -113,6 +114,48 @@ nav ul li a {
     font-size: 24px;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.story-section {
+    padding: 20px 0;
+}
+
+.story-section h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    color: #000024;
+    margin: 0;
+}
+
+.story-section p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000024;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.story-section p a{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000024;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.story-section ul {
+    list-style: none;
+}
+
+.story-section ul li p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000024;
+    margin: 0;
 }
 
 /* footer */
@@ -153,9 +196,9 @@ nav.mobile-nav {
     display: none;
 }
 
-@media only screen and (max-width: 1100px) {
+/* @media only screen and (max-width: 1100px) {
     .hero-section {
-        /* height: 70vh; */
+        height: 70vh;
         padding: 10px 0;
     }
 
@@ -177,7 +220,7 @@ nav.mobile-nav {
     .mobile-menu-container {
         display: none;
     }
-}
+} */
 
 @media only screen and (max-width: 720px) {
 
@@ -243,61 +286,6 @@ nav.mobile-nav {
         color: #FFFFFF;
         text-decoration: none;
         font-size: 20px;
-    }
-
-    .hero-section {
-        align-items: top;
-        justify-content: space-between;
-    }
-
-    .hero-section .hero-container {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-section .left h1 {
-        font-size: 30px;
-    }
-
-    .hero-section form input {
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-size: 15px;
-        text-align: center;
-    
-        margin-top: 5px; 
-    }
-
-    .hero-section .left p {
-        font-family: "Poppins", sans-serif;
-        font-weight: 500;
-        font-size: 15px;
-        margin-top: 5px;
-    }
-
-    .hero-section .right h1 {
-        text-align: left;
-        margin-right: 0;
-        margin-left: 20px;
-        font-size: 30px;
-    }
-    .hero-section .left .content {
-        width: 250px;
-        margin-right: 0;
-        margin-left: 20px;
-    }
-    .hero-section .right .content {
-        width: 250px;
-        margin-right: 0;
-        margin-left: 20px;
-    }
-
-    .hero-section .right p {
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-size: 15px;
-        text-align: center;
-
-        margin-top: 5px;
     }
 
     footer h3 {

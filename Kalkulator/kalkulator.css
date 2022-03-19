@@ -32,6 +32,7 @@ header {
     background: #2D42BF;
     height: 50pt;
     width: 100%;
+    z-index: 10;
 }
 
 nav {
@@ -79,40 +80,45 @@ nav ul li a {
     text-decoration: none;
 }
 
-.dev {
-    padding: 35vh 0;
-    align-items: center;
-    justify-content: center;
+.hero-section {
+    width: 100%;
+    padding: 150px 0;
+    margin-top: 0;
 }
 
-.development {
-    display: inline;
-    width: 80%;
-    align-items: center;
-}
-
-.development h1 {
-    font-family: "Raleway", sans-serif;
-    font-weight: 600;
-    font-size: 30px;
+.hero-section .hero-container h1 {
     text-align: center;
-    color: #000000;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: #000024;
+    margin: 0;
 }
 
-.development p {
+.hero-section .hero-container p {
+    text-align: center;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: 15px;
-    color: #000000;
-    text-align: center;
+    font-size: 24px;
+    color: #000024;
+    text-decoration: none;
+    margin: 0;
 }
 
+.hero-section .hero-container p a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000024;
+    text-decoration: none;
+}
 
 /* footer */
 footer{
     background: var(--very-dark-blue);
     color: #FFFFFF;
     padding: 50px 0;
+    z-index: 2;
 }
 
 footer a {
@@ -144,6 +150,32 @@ nav.mobile-nav {
 .mobile-menu-container {
     display: none;
 }
+
+/* @media only screen and (max-width: 1100px) {
+    .hero-section {
+        height: 70vh;
+        padding: 10px 0;
+    }
+
+    .hero-section .right{
+        margin-bottom: 0;
+    }
+
+    .hero-section .left .content {
+        width: 250px;
+    }
+
+    .hero-section .right .content {
+        width: 300px;
+    }
+    nav.mobile-nav {
+        display: none;
+    }
+
+    .mobile-menu-container {
+        display: none;
+    }
+} */
 
 @media only screen and (max-width: 720px) {
 
