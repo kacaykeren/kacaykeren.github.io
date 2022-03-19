@@ -1,5 +1,6 @@
 # kacaykeren.github.io
 Kalkulator Ala Christ Ari Yahu
 
-Version 1.0.0
-First Version
+Version 1.2.2
+
+Developer Team : Christ, Ari, Yahu, Fadey, Evan, Bimo.
