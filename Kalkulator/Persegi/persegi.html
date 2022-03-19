@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Raleway:wght@400;600:700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="persegi.css">
+    <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -60,50 +61,69 @@
     <div class="wrapper">
         <section class="calculator">
             <div class="hero-section">
-                <div class="left">
-                    <h1>Persegi <br></h1>
-                    <form action="#">
-                        <input id="sisi" type="number" placeholder="Sisi" step=".01"/>
-                        <button id="goButton" class="go-btn">GO</button>
-                    </form>
-                    <div class="content">
-                        <p id="hasilLuas">Luas</p>
+                <div class="hero-container">
+                    <div class="left-right">
+                        <div class="left">
+                            <h1>Persegi <br></h1>
+                            <form action="#">
+                                <input id="sisi" type="number" placeholder="Sisi" step=".01"/>
+                                <button id="goButton" class="go-btn">GO</button>
+                            </form>
+                            <div class="content">
+                                <p id="hasilLuas">Luas</p>
+                            </div>
+                            <div class="content">
+                                <p id="hasilKeliling">Keliling</p>
+                            </div>
+                            <div class="formula-container">
+                                <div class="formula-section">
+                                    <h1>Rumus</h1>
+                                    <ul>
+                                        <li>
+                                            <p>Luas = S x S</p>
+                                        </li>
+                                        <li>
+                                            <p>Keliling = 4 x S</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="content">
-                        <p id="hasilKeliling">Keliling</p>
-                    </div>
-                </div>
-                <div class="right">
-                    <h1>Persamaan<br>Satuan</h1>
-                    <div class="satuan">
-                        <div class="km-m">
-                            <div class="content">
-                                <p>1 Km = 1.000 m</p>
-                            </div>
-                        </div>
-                        <div class="m-cm">
-                            <div class="content">
-                                <p>1 m = 100 cm</p>
-                            </div>
-                        </div>
-                        <div class="km2-ha">
-                            <div class="content">
-                                <p>1 Km² = 100 Ha</p>
-                            </div>
-                        </div>
-                        <div class="ha-m2">
-                            <div class="content">
-                                <p>1 Ha = 10.000 m²</p>
-                            </div>
-                        </div>
-                        <div class="liter-cm3">
-                            <div class="content">
-                                <p>1 Liter = 1.000 cm³</p>
-                            </div>
-                        </div>
-                        <div class="kg-g">
-                            <div class="content">
-                                <p>1 Kg = 1.000 g</p>
+                    <div class="left-right">
+                        <div class="right">
+                            <h1>Persamaan<br>Satuan</h1>
+                            <div class="satuan">
+                                <div class="km-m">
+                                    <div class="content">
+                                        <p>1 Km = 1.000 m</p>
+                                    </div>
+                                </div>
+                                <div class="m-cm">
+                                    <div class="content">
+                                        <p>1 m = 100 cm</p>
+                                    </div>
+                                </div>
+                                <div class="km2-ha">
+                                    <div class="content">
+                                        <p>1 Km² = 100 Ha</p>
+                                    </div>
+                                </div>
+                                <div class="ha-m2">
+                                    <div class="content">
+                                        <p>1 Ha = 10.000 m²</p>
+                                    </div>
+                                </div>
+                                <div class="liter-cm3">
+                                    <div class="content">
+                                        <p>1 Liter = 1.000 cm³</p>
+                                    </div>
+                                </div>
+                                <div class="kg-g">
+                                    <div class="content">
+                                        <p>1 Kg = 1.000 g</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -113,32 +133,7 @@
     </div>    
     <!-- end of calculator-->
 
-    <div class="wrapper">
-        <section class="formula">
-            <div class="formula-container">
-                <div class="formula-section">
-                    <h1>Rumus</h1>
-                    <ul>
-                        <li>
-                            <p>Luas = S x S</p>
-                        </li>
-                        <li>
-                            <p>Keliling = 4 x S</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </div>
 
-    <div class="wrapper">
-        <section class="phone">
-            <div class="phone-development">
-                <H1>PHONE VERSION<br>UNDER DEVELOPMENT!</H1>
-                <p>Please Contact Us for More Information</p>
-            </div>
-        </section>
-    </div>
 
     <footer>
         <div class="wrapper">
@@ -164,7 +159,7 @@
                             <a href="#">Christ</a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/kamikt_real">Ari</a>
+                            <a href="https://www.instagram.com/kamikt_real" target="_blank">Ari</a>
                         </li>
                         <li>
                             <a href="https://www.instagram.com/yahu_tahu.gg" target="_blank">Yahu</a>

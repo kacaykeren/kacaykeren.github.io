@@ -81,11 +81,15 @@ nav ul li a {
 
 /* calculator */
 .hero-section {
-    display: flex;
-    height: 70vh;
     width: 100%;
-    /* align-items: top; */
-    justify-content: space-between;
+    align-items: top;
+    padding: 20px 0;
+}
+
+.hero-section .hero-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    
 }
 
 .hero-section .left h1{
@@ -168,6 +172,11 @@ nav ul li a {
     margin-right: 20px;
     text-align: right;
 }
+
+.hero-section .right {
+    padding-bottom: 20px;
+}
+
  
 .hero-section .right .content {
     border-radius: 14px;
@@ -176,7 +185,6 @@ nav ul li a {
     height: 35px;
     border: 1px solid #2F9CFF ;
     margin-bottom: 5px;
-    align-items: center;
     margin-right: 20px;
 }
 
@@ -195,7 +203,6 @@ nav ul li a {
     /* rumus */
 .formula-section {
     display: inline-block;
-    height: 40vh;
     align-items: top;
     
 }
@@ -223,9 +230,6 @@ nav ul li a {
     margin: 16px 0;
 }
 
-.phone-development {
-    display: none;
-}
 
 /* footer */
 footer{
@@ -266,7 +270,8 @@ nav.mobile-nav {
 
 @media only screen and (max-width: 1100px) {
     .hero-section {
-        height: 70vh;
+        /* height: 70vh; */
+        padding: 10px 0;
     }
 
     .hero-section .right{
@@ -357,11 +362,11 @@ nav.mobile-nav {
 
     .hero-section {
         align-items: top;
+        justify-content: space-between;
     }
 
-    .hero-section .left {
-        width: 90%;
-        height: 50vh;
+    .hero-section .hero-container {
+        grid-template-columns: 1fr;
     }
 
     .hero-section .left h1 {
@@ -382,12 +387,6 @@ nav.mobile-nav {
         font-weight: 500;
         font-size: 15px;
         margin-top: 5px;
-    }
-
-    .hero-section .right {
-        position: absolute;
-        height: 50vh;
-        margin-top: 45vh;
     }
 
     .hero-section .right h1 {
@@ -414,18 +413,6 @@ nav.mobile-nav {
         text-align: center;
 
         margin-top: 5px;
-    }
-
-    .formula-section {
-        margin-top: 30vh;
-    }
-
-    .formula-section h1 {
-        font-size: 30px;
-    }
-
-    .formula-section ul {
-        margin-left: 20px;
     }
 
     footer h3 {

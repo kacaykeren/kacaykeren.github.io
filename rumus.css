@@ -91,14 +91,18 @@ nav ul li a {
     margin-top: auto;
 }
 
-.list-container h3{
+.list-container h1{
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    color: #000000;
+}
+
+.list-container h2{
     font-family: "Raleway", sans-serif;
     font-weight: 600;
-    font-size: 40px;
-    margin-bottom: 16px;
+    font-size: 25px;
     color: #000000;
-    margin-right: 20px;
-    text-align: right;
+    margin-bottom: 0;
 }
 
 .list-container ul{
@@ -109,12 +113,16 @@ nav ul li a {
 }
 
 .list-container ul li {
-    margin: 16px 0;
+    margin: 8px 0;
 }
 
 .list-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.list-container .container {
+    margin-left: 20px;
 }
 
 
