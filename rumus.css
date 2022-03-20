@@ -93,16 +93,19 @@ nav ul li a {
 
 .list-container h1{
     font-family: "Raleway", sans-serif;
+    font-weight: 700;
     font-size: 30px;
     color: #000000;
+    margin-bottom: 10px;
 }
 
 .list-container h2{
     font-family: "Raleway", sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 25px;
     color: #000000;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .list-container ul{
