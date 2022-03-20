@@ -38,12 +38,12 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* vertical-align: middle; */
+  vertical-align: middle;
   position: fixed;
   width: 90%;
   top: 0px;
+  padding: 8pt 0;
   z-index: 100;
-  margin: 0;
   transition: all 500ms ease;
 }
 
