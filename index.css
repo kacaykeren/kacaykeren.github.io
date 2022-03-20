@@ -133,7 +133,9 @@ nav ul li a {
     color: #000024;
     margin-top: 5px;
     margin-bottom: 20px;
+    padding-left: 10px;
 }
+
 .story-section p a{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -147,7 +149,7 @@ nav ul li a {
 .story-section ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding-left: 10px;
 }
 
 .story-section ul li p{
