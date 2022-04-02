@@ -224,6 +224,10 @@ footer .links-container {
     display: grid;
     grid-template-columns: 2fr 2fr 3fr;
 }
+
+footer p a {
+    pointer-events: none;
+}
 nav.mobile-nav {
     display: none;
 }
