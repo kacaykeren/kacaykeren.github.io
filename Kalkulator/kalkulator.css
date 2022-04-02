@@ -32,7 +32,15 @@ header {
     background: #2D42BF;
     height: 50pt;
     width: 100%;
-    z-index: 10;
+    position: fixed;
+    transition: all 500ms ease;
+}
+
+header.scrolled {
+    background: rgba(0, 15, 107, 0.85);
+    border-radius: 0 0 8px 8px;
+    transition: all 500ms ease;
+    box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.5);
 }
 
 nav {
@@ -48,13 +56,13 @@ nav {
     transition: all 500ms ease;
 }
 
-nav.scrolled {
+/* nav.scrolled {
     background: var(--very-dark-blue);
     box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.3);
     border-radius: 0 0 8px 8px;
     top: 0;
     padding: 12px;
-}
+} */
 
 nav .logo a{
     font-family: "Raleway", sans-serif;
@@ -82,7 +90,7 @@ nav ul li a {
 
 .hero-section {
     width: 100%;
-    padding: 150px 0;
+    padding: 250pt 0;
     margin-top: 0;
 }
 
@@ -149,6 +157,21 @@ nav.mobile-nav {
 
 .mobile-menu-container {
     display: none;
+}
+
+nav .logo a:hover{
+    color: #E2E2E2;
+    /* color: #FFC500; */
+    /* text-decoration: underline; */
+}
+
+nav ul a:hover{
+    color: #E2E2E2;
+    text-decoration: underline;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
 }
 
 /* @media only screen and (max-width: 1100px) {

@@ -1,6 +1,6 @@
 // nav
-const nav = document.querySelector("nav");
-const mobileNav = document.querySelector("nav.mobile-nav");
+const nav = document.querySelector("header");
+// const mobileNav = document.querySelector("nav.mobile-nav");
 
 window.addEventListener("scroll", () => {
     if (window.pageYOffset > 15) {

@@ -29,9 +29,19 @@ body {
  /* header */
 
 header {
-    background: #2D42BF;
-    height: 50pt;
-    width: 100%;
+  background: #2D42BF;
+  height: 50pt;
+  width: 100%;
+  position: fixed;
+  transition: all 500ms ease;
+  top: 0;
+}
+
+header.scrolled {
+  background: rgba(0, 15, 107, 0.85);
+  border-radius: 0 0 8px 8px;
+  transition: all 500ms ease;
+  box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.5);
 }
 
 nav {
@@ -47,13 +57,13 @@ nav {
   transition: all 500ms ease;
 }
 
-nav.scrolled {
+/* nav.scrolled {
   background: var(--very-dark-blue);
   box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.3);
   border-radius: 0 0 8px 8px;
   top: 0;
   padding: 12px;
-}
+} */
 
 nav .logo a{
   font-family: "Raleway", sans-serif;
@@ -87,6 +97,7 @@ nav ul li a {
   padding: 20px 0;
   overflow: hidden;
   margin: 20pt 0;
+  margin-top: 65pt;
 }
 
 .quiz-container {
@@ -101,7 +112,7 @@ nav ul li a {
   padding: 4rem;
 }
 
-h2 {
+.quiz h2 {
   padding: 1rem;
   text-align: center;
   margin: 0;
@@ -121,7 +132,7 @@ h2 {
   cursor: pointer;
 }
 
-button {
+.quiz button {
   background-color: #FFC500;
   color: #000024;
   border: none;
@@ -138,11 +149,11 @@ button {
   padding: 1.3rem;
 }
 
-button:hover {
+.quiz button:hover {
   background-color: #FF9900;
 }
 
-button:focus {
+.quiz button:focus {
   outline: none;
   background-color: #FF9900;
 }
@@ -190,6 +201,20 @@ nav.mobile-nav {
   display: none;
 }
 
+nav .logo a:hover{
+  color: #E2E2E2;
+  /* color: #FFC500; */
+  /* text-decoration: underline; */
+}
+
+nav ul a:hover{
+  color: #E2E2E2;
+  text-decoration: underline;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
 
 @media only screen and (max-width: 720px) {
   

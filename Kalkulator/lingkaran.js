@@ -1,6 +1,6 @@
 // nav
-const nav = document.querySelector("nav");
-const mobileNav = document.querySelector("nav.mobile-nav");
+const nav = document.querySelector("header");
+// const mobileNav = document.querySelector("nav.mobile-nav");
 
 window.addEventListener("scroll", () => {
     if (window.pageYOffset > 15) {
@@ -23,32 +23,37 @@ menuIcon.addEventListener("click", () => {
 
 closeIcon.addEventListener("click", () => {
     mobileMenuContainer.classList.remove("active");
-})
+});
 
 // calculator
 const goButton = document.getElementById('goButton')
 
     goButton.addEventListener('click', () => {
         hitung()
+
         function hitung() {
-            const pi = 3.14;
-            var r = document.getElementById("radius").value;
-            var d = document.getElementById("diameter").value;
-            var luas
-            var keliling
+            let r = document.getElementById("radius").value;
+            let d = document.getElementById("diameter").value;
+            var luas;
+            var keliling;
+            let pi = 3.14;
 
             if (r == "") {
-                luas = 1 / 4 * pi * d * d;
-                keliling = pi * d;
+                r = 1/2 * d;
             } else {
-                luas = pi * r * r;
-                keliling = 2 * pi * r;
-            }
+                d = 2 * r;
+            };
+            
+            if ( r % 7 == 0 ) {
+                pi = 22/7;
+            } else if ( r % 7 !== 0 ) {
+                pi = 3.14;
+            };
+
+            luas = pi * r * r;
+            keliling = pi * d;
 
             document.getElementById("hasilLuas").innerHTML = luas;
             document.getElementById("hasilKeliling").innerHTML = keliling;
         }
-
-
-
-    })
+    });
