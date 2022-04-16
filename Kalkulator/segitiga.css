@@ -203,7 +203,6 @@ nav ul li a {
     margin-bottom: 16px;
     color: #000000;
     margin-right: 20px;
-    text-align: right;
 }
 
 .hero-section .right {
@@ -428,7 +427,6 @@ footer ul li a:hover {
         font-weight: 400;
         font-size: 15px;
         text-align: center;
-    
         margin-top: 5px; 
     }
 
@@ -444,11 +442,11 @@ footer ul li a:hover {
     }
 
     .hero-section .right h1 {
-        text-align: left;
         margin-right: 0;
         margin-left: 20px;
         font-size: 30px;
     }
+
     .hero-section .left .content {
         width: 250px;
         margin-right: 0;
