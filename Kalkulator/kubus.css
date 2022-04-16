@@ -35,10 +35,11 @@ header {
     position: fixed;
     transition: all 500ms ease;
     top: 0;
+    z-index: 100;
 }
 
 header.scrolled {
-    background: rgba(0, 15 , 107, 0.85);
+    background: rgba(0, 15, 107, 0.85);
     border-radius: 0 0 8px 8px;
     transition: all 500ms ease;
     box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.5);
@@ -71,7 +72,6 @@ nav .logo a{
     font-size: 40px;
     text-decoration: none;
     color: #FFFFFF;
-    filter: blur(0);
 }
 
 nav ul {
@@ -80,7 +80,6 @@ nav ul {
     gap: 45px;
     list-style: none;
     margin: 0;
-    filter: blur(0);
 }
 
 nav ul li a {
@@ -91,13 +90,119 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* list */
-.formula {
-    padding-top: 30pt;
+/* calculator */
+.hero-section {
+    width: 100%;
+    align-items: top;
+    padding: 20px 0;
+    padding-top: 50px;
 }
 
-.list-container a {
-    text-decoration: none;
+.hero-section .hero-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    
+}
+
+.hero-section .left h1{
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #000024;
+    margin-left: 20px;
+}
+
+.hero-section .left form {
+    margin-left: 20px;
+    margin-top: 16px;
+}
+
+.hero-section form input{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #000024;
+    margin-top: auto;
+
+    border-radius: 14px;
+    background: var(--light-blue);
+    width: 200px;
+    height: 35px;
+    border: 1px solid #2F9CFF ;
+    margin-bottom: 5px;
+}
+
+.hero-section .left form .go-btn {
+    position: relative;
+    padding: 0 12px;
+    height: 35px;
+    background: #FFC500;
+    border: 1px solid #FF9900;
+    border-radius: 14px;
+    margin-left: 0;
+    margin-top: 5px;
+    z-index: 1;
+    
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #000024;
+    margin-top: auto;
+}
+
+.hero-section .left .content {
+    border-radius: 14px;
+    background: var(--light-blue);
+    width: 350px;
+    height: 35px;
+    border: 1px solid #2F9CFF ;
+    margin-top: 5px;
+    align-items: center;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.hero-section .left p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+
+
+    color: #000024;
+    margin-top: auto;
+}
+
+.hero-section .right h1{
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 16px;
+    color: #000000;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.hero-section .right {
+    padding-bottom: 20px;
+}
+
+ 
+.hero-section .right .content {
+    border-radius: 14px;
+    background: var(--light-blue);
+    width: 350px;
+    height: 35px;
+    border: 1px solid #2F9CFF ;
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+
+
+
+.hero-section .right p {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 20px;
@@ -107,46 +212,34 @@ nav ul li a {
     margin-top: auto;
 }
 
-.list-container h1{
+    /* rumus */
+.formula-section {
+    display: inline-block;
+    align-items: top;
+    
+}
+
+.formula-section h1 {
     font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    color: #000000;
+    font-weight: 600;
+    font-size: 40px;
     margin-bottom: 10px;
-}
-
-.list-container h2{
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 25px;
     color: #000000;
-    margin-bottom: 0;
-    margin-top: 0;
+    margin-left: 20px;
 }
 
-.list-container ul{
+.formula-section ul {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
     list-style: none;
     padding-left: 20px;
-    margin-top: 0;
 }
 
-.list-container ul li {
-    margin: 6px 0;
-}
 
-.list-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.list-container .list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.list-container .container {
-    margin-left: 20px;
-    margin-bottom: 10px;
+.formula-section ul li {
+    margin: 16px 0;
 }
 
 
@@ -179,7 +272,6 @@ footer .links-container {
     display: grid;
     grid-template-columns: 2fr 2fr 3fr;
 }
-
 nav.mobile-nav {
     display: none;
 }
@@ -203,16 +295,30 @@ footer ul li a:hover {
     text-decoration: underline;
 }
 
-.formula ul li a:hover {
-    text-decoration: underline;
-}
-
-@media only screen and (max-width: 900px) {
-    .list-container .list {
-        display: grid;
-        grid-template-columns: 1fr;
+@media only screen and (max-width: 1100px) {
+    .hero-section {
+        /* height: 70vh; */
+        padding: 10px 0;
     }
-    
+
+    .hero-section .right{
+        margin-bottom: 0;
+    }
+
+    .hero-section .left .content {
+        width: 250px;
+    }
+
+    .hero-section .right .content {
+        width: 300px;
+    }
+    nav.mobile-nav {
+        display: none;
+    }
+
+    .mobile-menu-container {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 720px) {
@@ -224,7 +330,6 @@ footer ul li a:hover {
     nav.mobile-nav {
         display: flex;
         padding-left: 50px;
-        align-items: center;
     }
 
     nav.mobile-nav.scrolled {
@@ -282,36 +387,62 @@ footer ul li a:hover {
         font-size: 20px;
     }
 
-    .formula {
-        text-align: center;
+    .hero-section {
+        align-items: top;
+        justify-content: space-between;
+        
+        padding: 20px 25px;
+        margin-top: 50px;
     }
 
-    .list-container ul{
-        list-style: none;
-        padding-left: 0;
-        margin-top: 0;
-    }
-    
-    .list-container ul li {
-        margin: 0;
-    }
-
-    .list-container .container {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }    
-
-    .list-container {
-        display: grid;
+    .hero-section .hero-container {
         grid-template-columns: 1fr;
     }
 
-    .list-container .list-formula:first-child {
-        grid-column: 1/2;
+    .hero-section .left h1 {
+        font-size: 30px;
     }
 
-    .list-container .list-formula:last-child {
-        grid-column: 1/2;
+    .hero-section form input {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        text-align: center;
+    
+        margin-top: 5px; 
+    }
+
+    .hero-section .left p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .hero-section .right h1 {
+        text-align: left;
+        margin-right: 0;
+        margin-left: 20px;
+        font-size: 30px;
+    }
+    .hero-section .left .content {
+        width: 250px;
+        margin-right: 0;
+        margin-left: 20px;
+    }
+    .hero-section .right .content {
+        width: 250px;
+        margin-right: 0;
+        margin-left: 20px;
+    }
+
+    .hero-section .right p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        text-align: center;
+
+        margin-top: 5px;
     }
 
     footer h3 {

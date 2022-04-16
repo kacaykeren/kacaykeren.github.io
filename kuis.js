@@ -105,7 +105,7 @@ submitBtn.addEventListener('click', () => {
             `
         }
     }
-})
+});
 
 // nav
 const nav = document.querySelector("header");
