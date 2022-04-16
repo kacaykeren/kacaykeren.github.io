@@ -110,7 +110,7 @@ nav ul li a {
 }
 
 .quiz-header {
-  padding: 4rem;
+  padding: 50px;
 }
 
 .quiz h2 {
@@ -281,6 +281,13 @@ nav.mobile-nav.scrolled {
   color: #FFFFFF;
   text-decoration: none;
   font-size: 20px;
+}
+
+.quiz h2 {
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+  font-size: 15px;
 }
 
 footer h3 {
